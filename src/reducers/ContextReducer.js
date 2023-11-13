@@ -20,6 +20,7 @@ const contactSlice = createSlice({
         searchContact: (state,action)=>{
             const filterContacts = state.contacts.filter((user)=>user.name.toLowerCase().includes(action.payload.toLowerCase()))
             state.contacts = filterContacts;
+            console.log(filterContacts);
         },
         addMessage: (state, action) => {
             const { userId, message } = action.payload;

@@ -11,6 +11,7 @@ const RightHeader = () => {
   const uid = parseInt(id);
 
   const user = contactsState.find((u)=> u.id===uid );
+  console.log( "right header:-",user);
   return (
     <Row className='p-4' style={{backgroundColor:"#FF4B91"}}>
     <Col sm={1}> 
